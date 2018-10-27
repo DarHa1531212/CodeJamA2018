@@ -7,7 +7,7 @@ namespace CGICodeJamA2018CHSS
 {
     static public class AgreabiliteController
     {
-        static private List<Agreabilite> listeActions = new List<Agreabilite>();
+        static private List<Agreabilite> listeAgreabilite = new List<Agreabilite>();
         static private List<Utilisateur> userList = new List<Utilisateur>();
         static private uint maxGoldParDon = 0;
         static private uint maxGoldDonParJour = 0;
@@ -20,23 +20,21 @@ namespace CGICodeJamA2018CHSS
 
         static public uint GetMaxGoldDonParJour() { return maxGoldDonParJour; }
 
-        static public bool PushAgreabilite(Agreabilite agreabilite) {
-            if (!listeActions.Contains(agreabilite))
+        static public void PushAgreabilite(Agreabilite agreabilite) {
+            if (!listeAgreabilite.Contains(agreabilite))
             {
-                listeActions.Add(agreabilite);
-                listeActions.TrimExcess();
-                return true;
+                listeAgreabilite.Add(agreabilite);
+                listeAgreabilite.TrimExcess();
             }
-            return false;
         }
 
         static public void PopAgreabilite(Agreabilite agreabilite) {
-            while (listeActions.Contains(agreabilite)) {
-                listeActions.Remove(agreabilite);
+            while (listeAgreabilite.Contains(agreabilite)) {
+                listeAgreabilite.Remove(agreabilite);
             }
         }
 
-        static public List<Utilisateur> GetListeUtilisateurs() {
+        static public List<Utilisateur> GetUserList() {
             return userList;
         }
 
@@ -45,7 +43,8 @@ namespace CGICodeJamA2018CHSS
         }
 
         static public void ReceiveReward(DemandeDeDon demande) {
-            demande.GetReceveur(); //...Implémenter le gain de gold
+            Database.GetUserList().Find(demande.GetReceveur()).GainGold(demande.GetAgreabilite().GetGold());
+            Database.GetUserList().Find(demande.GetDonneur()).GetListeDons().Add(demande);
         }
 
     }

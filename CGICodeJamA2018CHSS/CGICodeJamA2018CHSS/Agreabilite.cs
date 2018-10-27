@@ -28,7 +28,7 @@ namespace CGICodeJamA2018CHSS
             return goldValue;
         }
 
-        private void SetGold(uint gold)
+        public void SetGold(uint gold)
         {
             goldValue = gold;
         }

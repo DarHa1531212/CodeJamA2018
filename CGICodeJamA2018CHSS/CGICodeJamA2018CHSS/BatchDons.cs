@@ -25,7 +25,7 @@ namespace CGICodeJamA2018CHSS
         {
             uint valeurDons = 0;
             List<DemandeDeDon> userData = new List<DemandeDeDon>();
-            foreach (DemandeDeDon demandeDon in donneur.listeDons) {
+            foreach (DemandeDeDon demandeDon in donneur.GetListeDons()) {
                 if (demandeDon.GetDate() == DateTime.Now.Date && demandeDon.GetReceveur() == demande.GetReceveur()) {
                     userData.Add(demandeDon);
                     valeurDons += demandeDon.GetAgreabilite().GetGold();
