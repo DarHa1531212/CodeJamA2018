@@ -40,7 +40,7 @@ GO
 CREATE TABLE tblBadge
 (
 	idbadge				int NOT NULL UNIQUE IDENTITY (1,1),
-	nombadge			varchar (25),
+	nombadge			varchar (100),
 	descriptionbadge	varchar (200),
 	PRIMARY KEY  (idbadge)
 )
@@ -157,4 +157,4 @@ alter table tblUserBadge
 add foreign key (idBadge) REFERENCES tblBadge (idBadge)
 
 alter table tblDonAgreabilite
-add foreign key (idRaisonEnvoi) REFERENCES tblraisonAgreabilite (idRaion)
+add foreign key (idRaisonEnvoi) REFERENCES tblraisonAgreabilite (idRaison)
