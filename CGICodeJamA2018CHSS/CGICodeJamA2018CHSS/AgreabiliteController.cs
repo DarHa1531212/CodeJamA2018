@@ -10,14 +10,26 @@ namespace CGICodeJamA2018CHSS
         static private List<Agreabilite> listeActions = new List<Agreabilite>();
         static private List<Utilisateur> userList = new List<Utilisateur>();
         static private uint maxGoldParDon = 0;
+        static private uint maxGoldDonParJour = 0;
+
+        static public void setMaxGoldParDon(uint maxGold) { maxGoldParDon = maxGold; }
+
+        static public uint getMaxGoldParDon() { return maxGoldParDon; }
+
+        static public void setMaxGoldDonParJour(uint maxGold) { maxGoldDonParJour = maxGold; }
+
+        static public uint getMaxGoldDonParJour() { return maxGoldDonParJour; }
 
         static public void pushAgreabilite(Agreabilite agreabilite) {
-            listeActions.Add(agreabilite);
-            listeActions.TrimExcess();
+            if (!listeActions.Contains(agreabilite))
+            {
+                listeActions.Add(agreabilite);
+                listeActions.TrimExcess();
+            }
         }
 
         static public void popAgreabilite(Agreabilite agreabilite) {
-            if (listeActions.Contains(agreabilite)) {
+            while (listeActions.Contains(agreabilite)) {
                 listeActions.Remove(agreabilite);
             }
         }
@@ -27,17 +39,16 @@ namespace CGICodeJamA2018CHSS
         }
 
         static private void updateListeUtilisateurs() {
-            //userList = //entrer nom du get ListeUtilisateurs
+            //userList = getUserList();
         }
 
-        static public void giveReward(Utilisateur giver, Utilisateur receiver, int amount) {
-            if (giver != receiver && amount > 0 && maxGoldParDon >= amount) {
+        static private bool canReceiveReward(DemandeDeDon demande) {
+            if (true /*demande n'existe pas déjà et respecte les normes*/ ) {
                 //receiver.getGold(amount);
             }
+            return true; //À changer
         }
 
-        static public setMaxGoldParDon(uint maxGold) {
-            maxGoldParDon = maxGold;
-        }
+        //travailler avec classe giver, receiver, amount
     }
 }
