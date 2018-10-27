@@ -9,7 +9,7 @@ namespace CGICodeJamA2018CHSS
     {
         static private List<Agreabilite> listeActions = new List<Agreabilite>();
         static private List<Utilisateur> userList = new List<Utilisateur>();
-        static private int maxGoldParDon = 0;
+        static private uint maxGoldParDon = 0;
 
         static public void pushAgreabilite(Agreabilite agreabilite) {
             listeActions.Add(agreabilite);
@@ -36,6 +36,8 @@ namespace CGICodeJamA2018CHSS
             }
         }
 
-
+        static public setMaxGoldParDon(uint maxGold) {
+            maxGoldParDon = maxGold;
+        }
     }
 }

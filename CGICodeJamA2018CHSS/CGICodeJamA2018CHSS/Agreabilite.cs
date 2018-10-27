@@ -8,8 +8,8 @@ namespace CGICodeJamA2018CHSS
     public class Agreabilite
     {
         private string name;
-        private int xpValue;
-        private int goldValue;
+        private uint xpValue;
+        private uint goldValue;
 
         Agreabilite(string nom, int xp, int gold) {
             setName(nom);
