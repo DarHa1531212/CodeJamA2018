@@ -12,15 +12,15 @@ namespace CGICodeJamA2018CHSS
         static private uint maxGoldParDon = 0;
         static private uint maxGoldDonParJour = 0;
 
-        static public void setMaxGoldParDon(uint maxGold) { maxGoldParDon = maxGold; }
+        static public void SetMaxGoldParDon(uint maxGold) { maxGoldParDon = maxGold; }
 
-        static public uint getMaxGoldParDon() { return maxGoldParDon; }
+        static public uint GetMaxGoldParDon() { return maxGoldParDon; }
 
-        static public void setMaxGoldDonParJour(uint maxGold) { maxGoldDonParJour = maxGold; }
+        static public void SetMaxGoldDonParJour(uint maxGold) { maxGoldDonParJour = maxGold; }
 
-        static public uint getMaxGoldDonParJour() { return maxGoldDonParJour; }
+        static public uint GetMaxGoldDonParJour() { return maxGoldDonParJour; }
 
-        static public void pushAgreabilite(Agreabilite agreabilite) {
+        static public void PushAgreabilite(Agreabilite agreabilite) {
             if (!listeActions.Contains(agreabilite))
             {
                 listeActions.Add(agreabilite);
@@ -28,27 +28,23 @@ namespace CGICodeJamA2018CHSS
             }
         }
 
-        static public void popAgreabilite(Agreabilite agreabilite) {
+        static public void PopAgreabilite(Agreabilite agreabilite) {
             while (listeActions.Contains(agreabilite)) {
                 listeActions.Remove(agreabilite);
             }
         }
 
-        static public List<Utilisateur> getListeUtilisateurs() {
+        static public List<Utilisateur> GetListeUtilisateurs() {
             return userList;
         }
 
-        static private void updateListeUtilisateurs() {
-            //userList = getUserList();
+        static private void UpdateListeUtilisateurs() {
+            userList = GetUserList(); //va chercher la liste d'utilisateurs dans la base de données
         }
 
-        static private bool canReceiveReward(DemandeDeDon demande) {
-            if (true /*demande n'existe pas déjà et respecte les normes*/ ) {
-                //receiver.getGold(amount);
-            }
-            return true; //À changer
+        static public void ReceiveReward(DemandeDeDon demande) {
+            demande.GetReceveur(); //...Implémenter le gain de gold
         }
 
-        //travailler avec classe giver, receiver, amount
     }
 }

@@ -8,39 +8,27 @@ namespace CGICodeJamA2018CHSS
     public class Agreabilite
     {
         private string name;
-        private uint xpValue;
         private uint goldValue;
 
-        Agreabilite(string nom, int xp, int gold) {
-            setName(nom);
-            setXp(xp);
-            setGold(gold);
+        Agreabilite(string nom, int xp, uint gold) {
+            SetName(nom);
+            SetGold(gold);
         }
 
-        public string getName() {
+        public string GetName() {
             return name;
         }
 
-        private void setName(string nom) {
+        private void SetName(string nom) {
             name = nom;
         }
 
-        public int getXp()
-        {
-            return xpValue;
-        }
-
-        private void setXp(int xp)
-        {
-            xpValue = xp;
-        }
-
-        public int getGold()
+        public uint GetGold()
         {
             return goldValue;
         }
 
-        private void setGold(int gold)
+        private void SetGold(uint gold)
         {
             goldValue = gold;
         }
