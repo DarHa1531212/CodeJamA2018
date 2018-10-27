@@ -1,54 +1,55 @@
-INSERT INTO tblUser (	noEmploye	,	prenomNom			,	motPasse		,	xpTotal	,	dateEmbaudhe	,	gold	)	Values
-					(	'1'			,	'Ananseth'			,	'Mot de passe'	,	559		,	'2020-12-08'	,	49		)	,
-					(	'2'			,	'Anoshnornar'		,	'Mot de passe'	,	1410	,	'2021-11-19'	,	119		)	,
-					(	'3'			,	'Ashariya'			,	'Mot de passe'	,	819		,	'2018-06-18'	,	11		)	,
-					(	'4'			,	'Ashersan'			,	'Mot de passe'	,	1068	,	'2018-10-05'	,	102		)	,
-					(	'5'			,	'Cersil'			,	'Mot de passe'	,	939		,	'2021-09-20'	,	21		)	,
-					(	'6'			,	'Charosshen'		,	'Mot de passe'	,	878		,	'2022-08-12'	,	80		)	,
-					(	'7'			,	'Chenassean'		,	'Mot de passe'	,	154		,	'2020-01-31'	,	145		)	,
-					(	'8'			,	'Cheroshu'			,	'Mot de passe'	,	496		,	'2023-05-23'	,	53		)	,
-					(	'9'			,	'Chyshysseth'		,	'Mot de passe'	,	1005	,	'2025-03-28'	,	33		)	,
-					(	'10'		,	'Hynser'			,	'Mot de passe'	,	1985	,	'2021-12-02'	,	156		)	,
-					(	'11'		,	'Hysnor'			,	'Mot de passe'	,	1264	,	'2025-10-01'	,	36		)	,
-					(	'12'		,	'Hædarshen'			,	'Mot de passe'	,	1160	,	'2022-07-20'	,	153		)	,
-					(	'13'		,	'Iseshisha'			,	'Mot de passe'	,	798		,	'2020-06-25'	,	119		)	,
-					(	'14'		,	'Shamusnorser'		,	'Mot de passe'	,	138		,	'2018-05-18'	,	24		)	,
-					(	'15'		,	'Shamyssila'		,	'Mot de passe'	,	514		,	'2024-02-04'	,	182		)	,
-					(	'16'		,	'Shanyseannar'		,	'Mot de passe'	,	897		,	'2019-05-20'	,	130		)	,
-					(	'17'		,	'Shariderish'		,	'Mot de passe'	,	181		,	'2020-03-25'	,	43		)	,
-					(	'18'		,	'Shimasashaesh'		,	'Mot de passe'	,	1458	,	'2019-04-13'	,	54		)	,
-					(	'19'		,	'Shoryso'			,	'Mot de passe'	,	847		,	'2021-09-02'	,	16		)	,
-					(	'20'		,	'Shænæseru'			,	'Mot de passe'	,	1663	,	'2022-07-12'	,	95		)	,
-					(	'21'		,	'Solushshœresh'		,	'Mot de passe'	,	26		,	'2025-09-09'	,	21		)	,
-					(	'22'		,	'Solyssin'			,	'Mot de passe'	,	454		,	'2025-07-23'	,	50		)	,
-					(	'23'		,	'Sorosyosha'		,	'Mot de passe'	,	1216	,	'2021-12-13'	,	9		)	,
-					(	'24'		,	'Ushyssir'			,	'Mot de passe'	,	819		,	'2022-08-04'	,	102		)	,
-					(	'25'		,	'Usæyosh'			,	'Mot de passe'	,	1328	,	'2019-01-22'	,	68		)	,
-					(	'26'		,	'Amynder'			,	'Mot de passe'	,	1063	,	'2021-06-13'	,	41		)	,
-					(	'27'		,	'Anisshœrseth'		,	'Mot de passe'	,	159		,	'2023-06-10'	,	82		)	,
-					(	'28'		,	'Ceræsen'			,	'Mot de passe'	,	1004	,	'2022-11-12'	,	60		)	,
-					(	'29'		,	'Cysshel'			,	'Mot de passe'	,	307		,	'2019-12-12'	,	92		)	,
-					(	'30'		,	'Eshæiash'			,	'Mot de passe'	,	94		,	'2021-01-01'	,	146		)	,
-					(	'31'		,	'Esshœr'			,	'Mot de passe'	,	1368	,	'2020-05-08'	,	135		)	,
-					(	'32'		,	'Hushsearsen'		,	'Mot de passe'	,	397		,	'2018-09-17'	,	8		)	,
-					(	'33'		,	'Oshomireily'		,	'Mot de passe'	,	1004	,	'2023-10-18'	,	121		)	,
-					(	'34'		,	'Ososhsuri'			,	'Mot de passe'	,	1419	,	'2018-11-16'	,	184		)	,
-					(	'35'		,	'Sanossirnoreil'	,	'Mot de passe'	,	704		,	'2018-09-13'	,	18		)	,
-					(	'36'		,	'Sarirorsha'		,	'Mot de passe'	,	1034	,	'2019-07-19'	,	68		)	,
-					(	'37'		,	'Seressurnarel'		,	'Mot de passe'	,	1976	,	'2020-04-04'	,	33		)	,
-					(	'38'		,	'Serinoreilel'		,	'Mot de passe'	,	940		,	'2022-06-23'	,	200		)	,
-					(	'39'		,	'Seræsham'			,	'Mot de passe'	,	981		,	'2019-06-07'	,	114		)	,
-					(	'40'		,	'Shamorish'			,	'Mot de passe'	,	1810	,	'2023-07-31'	,	29		)	,
-					(	'41'		,	'Shamunsan'			,	'Mot de passe'	,	107		,	'2021-11-28'	,	108		)	,
-					(	'42'		,	'Shanara'			,	'Mot de passe'	,	151		,	'2022-12-13'	,	78		)	,
-					(	'43'		,	'Shissormireil'		,	'Mot de passe'	,	1116	,	'2018-08-03'	,	78		)	,
-					(	'44'		,	'Sinues'			,	'Mot de passe'	,	1179	,	'2019-07-16'	,	136		)	,
-					(	'45'		,	'Soloelsor'			,	'Mot de passe'	,	1650	,	'2019-07-05'	,	46		)	,
-					(	'46'		,	'Sorarorsha'		,	'Mot de passe'	,	1322	,	'2025-03-28'	,	15		)	,
-					(	'47'		,	'Soronas'			,	'Mot de passe'	,	316		,	'2019-11-23'	,	151		)	,
-					(	'48'		,	'Yshisearishæ'		,	'Mot de passe'	,	204		,	'2023-01-21'	,	21		)	,
-					(	'49'		,	'Œonsan'			,	'Mot de passe'	,	343		,	'2020-05-06'	,	58		)	,
-					(	'50'		,	'Æeyeaes'			,	'Mot de passe'	,	1120	,	'2025-03-07'	,	181		)	
+INSERT INTO tblUser (	noEmploye	,	prenomNom			,	motPasse	,	xpTotal	,	dateEmbaudhe	,	gold	)	Values
+					(	'1'			,	'Ananseth'			,	'motpasse'	,	559		,	'2020-12-08'	,	49		)	,
+					(	'2'			,	'Anoshnornar'		,	'motpasse'	,	1410	,	'2021-11-19'	,	119		)	,
+					(	'3'			,	'Ashariya'			,	'motpasse'	,	819		,	'2018-06-18'	,	11		)	,
+					(	'4'			,	'Ashersan'			,	'motpasse'	,	1068	,	'2018-10-05'	,	102		)	,
+					(	'5'			,	'Cersil'			,	'motpasse'	,	939		,	'2021-09-20'	,	21		)	,
+					(	'6'			,	'Charosshen'		,	'motpasse'	,	878		,	'2022-08-12'	,	80		)	,
+					(	'7'			,	'Chenassean'		,	'motpasse'	,	154		,	'2020-01-31'	,	145		)	,
+					(	'8'			,	'Cheroshu'			,	'motpasse'	,	496		,	'2023-05-23'	,	53		)	,
+					(	'9'			,	'Chyshysseth'		,	'motpasse'	,	1005	,	'2025-03-28'	,	33		)	,
+					(	'10'		,	'Hynser'			,	'motpasse'	,	1985	,	'2021-12-02'	,	156		)	,
+					(	'11'		,	'Hysnor'			,	'motpasse'	,	1264	,	'2025-10-01'	,	36		)	,
+					(	'12'		,	'Hædarshen'			,	'motpasse'	,	1160	,	'2022-07-20'	,	153		)	,
+					(	'13'		,	'Iseshisha'			,	'motpasse'	,	798		,	'2020-06-25'	,	119		)	,
+					(	'14'		,	'Shamusnorser'		,	'motpasse'	,	138		,	'2018-05-18'	,	24		)	,
+					(	'15'		,	'Shamyssila'		,	'motpasse'	,	514		,	'2024-02-04'	,	182		)	,
+					(	'16'		,	'Shanyseannar'		,	'motpasse'	,	897		,	'2019-05-20'	,	130		)	,
+					(	'17'		,	'Shariderish'		,	'motpasse'	,	181		,	'2020-03-25'	,	43		)	,
+					(	'18'		,	'Shimasashaesh'		,	'motpasse'	,	1458	,	'2019-04-13'	,	54		)	,
+					(	'19'		,	'Shoryso'			,	'motpasse'	,	847		,	'2021-09-02'	,	16		)	,
+					(	'20'		,	'Shænæseru'			,	'motpasse'	,	1663	,	'2022-07-12'	,	95		)	,
+					(	'21'		,	'Solushshœresh'		,	'motpasse'	,	26		,	'2025-09-09'	,	21		)	,
+					(	'22'		,	'Solyssin'			,	'motpasse'	,	454		,	'2025-07-23'	,	50		)	,
+					(	'23'		,	'Sorosyosha'		,	'motpasse'	,	1216	,	'2021-12-13'	,	9		)	,
+					(	'24'		,	'Ushyssir'			,	'motpasse'	,	819		,	'2022-08-04'	,	102		)	,
+					(	'25'		,	'Usæyosh'			,	'motpasse'	,	1328	,	'2019-01-22'	,	68		)	,
+					(	'26'		,	'Amynder'			,	'motpasse'	,	1063	,	'2021-06-13'	,	41		)	,
+					(	'27'		,	'Anisshœrseth'		,	'motpasse'	,	159		,	'2023-06-10'	,	82		)	,
+					(	'28'		,	'Ceræsen'			,	'motpasse'	,	1004	,	'2022-11-12'	,	60		)	,
+					(	'29'		,	'Cysshel'			,	'motpasse'	,	307		,	'2019-12-12'	,	92		)	,
+					(	'30'		,	'Eshæiash'			,	'motpasse'	,	94		,	'2021-01-01'	,	146		)	,
+					(	'31'		,	'Esshœr'			,	'motpasse'	,	1368	,	'2020-05-08'	,	135		)	,
+					(	'32'		,	'Hushsearsen'		,	'motpasse'	,	397		,	'2018-09-17'	,	8		)	,
+					(	'33'		,	'Oshomireily'		,	'motpasse'	,	1004	,	'2023-10-18'	,	121		)	,
+					(	'34'		,	'Ososhsuri'			,	'motpasse'	,	1419	,	'2018-11-16'	,	184		)	,
+					(	'35'		,	'Sanossirnoreil'	,	'motpasse'	,	704		,	'2018-09-13'	,	18		)	,
+					(	'36'		,	'Sarirorsha'		,	'motpasse'	,	1034	,	'2019-07-19'	,	68		)	,
+					(	'37'		,	'Seressurnarel'		,	'motpasse'	,	1976	,	'2020-04-04'	,	33		)	,
+					(	'38'		,	'Serinoreilel'		,	'motpasse'	,	940		,	'2022-06-23'	,	200		)	,
+					(	'39'		,	'Seræsham'			,	'motpasse'	,	981		,	'2019-06-07'	,	114		)	,
+					(	'40'		,	'Shamorish'			,	'motpasse'	,	1810	,	'2023-07-31'	,	29		)	,
+					(	'41'		,	'Shamunsan'			,	'motpasse'	,	107		,	'2021-11-28'	,	108		)	,
+					(	'42'		,	'Shanara'			,	'motpasse'	,	151		,	'2022-12-13'	,	78		)	,
+					(	'43'		,	'Shissormireil'		,	'motpasse'	,	1116	,	'2018-08-03'	,	78		)	,
+					(	'44'		,	'Sinues'			,	'motpasse'	,	1179	,	'2019-07-16'	,	136		)	,
+					(	'45'		,	'Soloelsor'			,	'motpasse'	,	1650	,	'2019-07-05'	,	46		)	,
+					(	'46'		,	'Sorarorsha'		,	'motpasse'	,	1322	,	'2025-03-28'	,	15		)	,
+					(	'47'		,	'Soronas'			,	'motpasse'	,	316		,	'2019-11-23'	,	151		)	,
+					(	'48'		,	'Yshisearishæ'		,	'motpasse'	,	204		,	'2023-01-21'	,	21		)	,
+					(	'49'		,	'Œonsan'			,	'motpasse'	,	343		,	'2020-05-06'	,	58		)	,
+					(	'50'		,	'Æeyeaes'			,	'motpasse'	,	1120	,	'2025-03-07'	,	181		)	
+
 
 SET IDENTITY_INSERT tblBadge ON
 
@@ -62,7 +63,7 @@ INSERT INTO tblBadge	(	idbadge	,	nombadge						,	descriptionbadge						)	Values
 						(	7		,	'Diamant'						,	'Atteindre le niveau 30'				)	,
 						(	8		,	'Jeune'							,	'Atteindre 1 an d"ancienneté'			)	,
 						(	9		,	'Adolescent'					,	'Atteindre 5 ans d"ancienneté'			)	,
-						(	10		,	'jeune Adulte'					,	'Atteindre 10 ans d"ancienneté'			)	,
+						(	10		,	'Jeune Adulte'					,	'Atteindre 10 ans d"ancienneté'			)	,
 						(	11		,	'Adulte'						,	'Atteindre 15 ans d"ancienneté'			)	,
 						(	12		,	'Âge mûr'						,	'Atteindre 20 ans d"ancienneté'			)	,
 						(	13		,	'Sénior'						,	'Atteindre 25 ans d"ancienneté'			)	,
@@ -82,6 +83,7 @@ INSERT INTO tblBadge	(	idbadge	,	nombadge						,	descriptionbadge						)	Values
 						(	27		,	'Agréabilité'					,	'Être agréable à cotôyer'				)	
 
 SET IDENTITY_INSERT tblBadge OFF
+
 
 INSERT INTO tbluserBadge	(	idUser	,	idbadge	,	dateObtention	)	Values
 							(	1		,	1		,	'2023-03-22'	)	,
@@ -194,3 +196,184 @@ INSERT INTO tbluserBadge	(	idUser	,	idbadge	,	dateObtention	)	Values
 							(	50		,	8		,	'2020-07-03'	)	,
 							(	50		,	17		,	'2024-01-09'	)
 
+
+SET IDENTITY_INSERT tblNiveau ON
+
+INSERT INTO tblNiveau	(	idNiveau	,	xpMinNiveau	)	Values
+						(	1			,	0			)	,
+						(	2			,	300			)	,
+						(	3			,	900			)	,
+						(	4			,	2700		)	,
+						(	5			,	6500		)	,
+						(	6			,	14000		)	,
+						(	7			,	23000		)	,
+						(	8			,	34000		)	,
+						(	9			,	48000		)	,
+						(	10			,	64000		)	,
+						(	11			,	85000		)	,
+						(	12			,	100000		)	,
+						(	13			,	120000		)	,
+						(	14			,	140000		)	,
+						(	15			,	165000		)	,
+						(	16			,	195000		)	,
+						(	17			,	225000		)	,
+						(	18			,	265000		)	,
+						(	19			,	305000		)	,
+						(	20			,	355000		)	,
+						(	21			,	400000		)	,
+						(	22			,	465000		)	,
+						(	23			,	530000		)	,
+						(	24			,	600000		)	,
+						(	25			,	675000		)	,
+						(	26			,	765000		)	,
+						(	27			,	855000		)	,
+						(	28			,	950000		)	,
+						(	29			,	1050000		)	,
+						(	30			,	1125000		)	
+
+SET IDENTITY_INSERT tblNiveau OFF
+
+
+SET IDENTITY_INSERT tblGainXP ON
+
+INSERT INTO tblGainXP	(	idCauseGain	,	nomCauseGain			)	Values
+						(	1			,	'Badges'				)	,
+						(	2			,	'Travaux complétés'		)	,
+						(	3			,	'Ponctualité'			)
+
+SET IDENTITY_INSERT tblGainXP OFF
+
+
+SET IDENTITY_INSERT tblXPGagne ON
+
+INSERT INTO tblXPGagne	(	idGainXP	,	IDUser	,	dateXPGagne		,	idCauseGainXP	,	qteXPGagne	)	Values
+						(	1			,	1		,	'2019-03-08'	,	1				,	9			)	,
+						(	2			,	2		,	'2020-11-10'	,	2				,	26			)	,
+						(	3			,	3		,	'2020-10-01'	,	3				,	22			)	,
+						(	4			,	4		,	'2019-09-02'	,	1				,	10			)	,
+						(	5			,	5		,	'2025-10-31'	,	2				,	48			)	,
+						(	6			,	6		,	'2024-03-09'	,	3				,	48			)	,
+						(	7			,	7		,	'2018-05-09'	,	1				,	13			)	,
+						(	8			,	8		,	'2019-04-09'	,	2				,	22			)	,
+						(	9			,	9		,	'2025-04-30'	,	3				,	14			)	,
+						(	10			,	10		,	'2018-03-03'	,	1				,	43			)	,
+						(	11			,	11		,	'2018-05-29'	,	2				,	11			)	,
+						(	12			,	12		,	'2025-07-21'	,	3				,	6			)	,
+						(	13			,	13		,	'2019-02-01'	,	1				,	15			)	,
+						(	14			,	14		,	'2025-10-20'	,	2				,	30			)	,
+						(	15			,	15		,	'2019-09-07'	,	3				,	24			)	,
+						(	16			,	16		,	'2021-01-26'	,	1				,	15			)	,
+						(	17			,	17		,	'2023-10-16'	,	2				,	8			)	,
+						(	18			,	18		,	'2019-09-05'	,	3				,	40			)	,
+						(	19			,	19		,	'2018-03-03'	,	1				,	27			)	,
+						(	20			,	20		,	'2023-06-07'	,	2				,	49			)	,
+						(	21			,	21		,	'2018-12-10'	,	3				,	8			)	,
+						(	22			,	22		,	'2025-07-08'	,	1				,	39			)	,
+						(	23			,	23		,	'2018-12-07'	,	2				,	12			)	,
+						(	24			,	24		,	'2019-03-04'	,	3				,	40			)	,
+						(	25			,	25		,	'2025-01-15'	,	1				,	34			)	,
+						(	26			,	26		,	'2022-08-31'	,	2				,	41			)	,
+						(	27			,	27		,	'2025-10-05'	,	3				,	43			)	,
+						(	28			,	28		,	'2020-12-25'	,	1				,	15			)	,
+						(	29			,	29		,	'2018-06-07'	,	2				,	42			)	,
+						(	30			,	30		,	'2024-10-30'	,	3				,	43			)	,
+						(	31			,	31		,	'2019-01-21'	,	1				,	22			)	,
+						(	32			,	32		,	'2025-02-06'	,	2				,	38			)	,
+						(	33			,	33		,	'2018-01-28'	,	3				,	25			)			,
+						(	34			,	34		,	'2023-06-02'	,	1				,	8			)	,
+						(	35			,	35		,	'2021-04-15'	,	2				,	25			)	,
+						(	36			,	36		,	'2024-11-26'	,	3				,	16			)	,
+						(	37			,	37		,	'2022-02-22'	,	1				,	16				)	,
+						(	38			,	38		,	'2021-01-30'	,	2				,	41			)	,
+						(	39			,	39		,	'2024-09-11'	,	3				,	28			)	,
+						(	40			,	40		,	'2023-07-10'	,	1				,	16			)	,
+						(	41			,	41		,	'2020-11-08'	,	2				,	28			)	,
+						(	42			,	42		,	'2021-08-26'	,	3				,	35			)	,
+						(	43			,	43		,	'2019-07-30'	,	1				,	14			)	,
+						(	44			,	44		,	'2025-12-28'	,	2				,	27			)	,
+						(	45			,	45		,	'2019-11-02'	,	3				,	25			)	,
+						(	46			,	46		,	'2023-06-30'	,	1				,	11			)	,
+						(	47			,	47		,	'2023-12-07'	,	2				,	7			)	,
+						(	48			,	48		,	'2018-01-01'	,	3				,	37			)	,
+						(	49			,	49		,	'2021-06-30'	,	1				,	46			)	,
+						(	50			,	50		,	'2025-01-02'	,	2				,	17			)	
+
+SET IDENTITY_INSERT tblXPGagne OFF
+
+
+SET IDENTITY_INSERT tblCheckIn ON
+
+INSERT INTO tblCheckIn	(	idCheckIn	,	idUser	,	accepte	,	dateCheckIn		)	Values
+						(	1			,	3		,	0		,	'2025-04-06'	)	,
+						(	2			,	14		,	1		,	'2020-08-14'	)	,
+						(	3			,	33		,	0		,	'2019-05-07'	)	,
+						(	4			,	26		,	0		,	'2019-08-11'	)	,
+						(	5			,	15		,	1		,	'2020-04-12'	)	,
+						(	6			,	8		,	1		,	'2021-01-06'	)	,
+						(	7			,	12		,	1		,	'2024-02-07'	)	,
+						(	8			,	7		,	0		,	'2022-09-04'	)	,
+						(	9			,	42		,	1		,	'2023-05-07'	)	,
+						(	10			,	50		,	0		,	'2025-03-17'	)	,
+						(	11			,	3		,	1		,	'2025-04-06'	)	,
+						(	12			,	14		,	1		,	'2020-08-14'	)	,
+						(	13			,	33		,	0		,	'2019-05-07'	)	,
+						(	14			,	26		,	0		,	'2019-08-11'	)	,
+						(	15			,	15		,	1		,	'2020-04-12'	)	,
+						(	16			,	8		,	1		,	'2021-01-06'	)	,
+						(	17			,	12		,	1		,	'2024-02-07'	)	,
+						(	18			,	7		,	1		,	'2022-09-04'	)	,
+						(	19			,	42		,	1		,	'2023-05-07'	)	,
+						(	20			,	50		,	0		,	'2025-03-17'	)	,
+						(	21			,	3		,	1		,	'2025-04-06'	)	,
+						(	22			,	14		,	1		,	'2020-08-14'	)	,
+						(	23			,	33		,	0		,	'2019-05-07'	)	,
+						(	24			,	26		,	1		,	'2019-08-11'	)	,
+						(	25			,	15		,	1		,	'2020-04-12'	)	,
+						(	26			,	8		,	1		,	'2021-01-06'	)	,
+						(	27			,	12		,	1		,	'2024-02-07'	)	,
+						(	28			,	7		,	0		,	'2022-09-04'	)	,
+						(	29			,	42		,	1		,	'2023-05-07'	)	,
+						(	30			,	50		,	1		,	'2025-03-17'	)	,
+						(	31			,	50		,	0		,	'2025-03-17'	)	,
+						(	32			,	50		,	1		,	'2025-04-06'	)	,
+						(	33			,	14		,	1		,	'2020-08-14'	)	,
+						(	34			,	10		,	0		,	'2019-05-07'	)	,
+						(	35			,	18		,	0		,	'2019-08-11'	)	,
+						(	36			,	25		,	1		,	'2020-04-12'	)	,
+						(	37			,	25		,	1		,	'2021-01-06'	)	,
+						(	38			,	19		,	1		,	'2024-02-07'	)	,
+						(	39			,	33		,	1		,	'2022-09-04'	)	,
+						(	40			,	32		,	1		,	'2023-05-07'	)	,
+						(	41			,	27		,	0		,	'2025-03-17'	)	,
+						(	42			,	23		,	1		,	'2025-04-06'	)	,
+						(	43			,	25		,	1		,	'2020-08-14'	)	,
+						(	44			,	21		,	0		,	'2019-05-07'	)	,
+						(	45			,	18		,	1		,	'2019-08-11'	)	,
+						(	46			,	5		,	1		,	'2020-04-12'	)	,
+						(	47			,	8		,	1		,	'2021-01-06'	)	,
+						(	48			,	39		,	1		,	'2024-02-07'	)	,
+						(	49			,	41		,	0		,	'2022-09-04'	)	,
+						(	50			,	38		,	1		,	'2023-05-07'	)	,
+
+SET IDENTITY_INSERT tblCheckIn OFF
+
+
+SET IDENTITY_INSERT tblraisonAgreabilite ON
+
+INSERT INTO tblraisonAgreabilite	(	idRaison	,	nomRaison	)	Values
+									(	1			,	'Politesse'	)	,
+									(	2			,	'Entraide'	)	,
+									(	3			,	'Propreté'	)	
+
+SET IDENTITY_INSERT tblraisonAgreabilite OFF
+
+
+SET IDENTITY_INSERT tblDonAgreabilite ON
+
+INSERT INTO tblDonAgreabilite	(	idDonAgreabilite	,	idEnvoyeur	,	idReceveur	,	qteGoldEnvoye	,	idRaisonEnvoi		,	descriptionSupp	,	dateEnvoi		)	Values
+								(	1					,	12			,	24			,	2				,	1					,	'Il a été poli'	,	'2018-04-30'	)	,
+								(	2					,	27			,	35			,	3				,	2					,	'Il m"a aidé'	,	'2023-12-18'	)	,
+								(	3					,	43			,	7			,	2				,	3					,	'Il se ramasse'	,	'2019-07-17'	)	
+
+
+SET IDENTITY_INSERT tblDonAgreabilite OFF
