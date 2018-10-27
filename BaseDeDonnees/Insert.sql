@@ -358,7 +358,7 @@ INSERT INTO tblCheckIn	(	idCheckIn	,	idUser	,	accepte	,	dateCheckIn		)	Values
 						(	47			,	8		,	1		,	'2021-01-06'	)	,
 						(	48			,	39		,	1		,	'2024-02-07'	)	,
 						(	49			,	41		,	0		,	'2022-09-04'	)	,
-						(	50			,	38		,	1		,	'2023-05-07'	)	,
+						(	50			,	38		,	1		,	'2023-05-07'	)
 
 SET IDENTITY_INSERT tblCheckIn OFF
 
