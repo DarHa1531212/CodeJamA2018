@@ -25,7 +25,7 @@ CREATE TABLE tblUser
 	motPasse		varchar (50)		NOT NULL DEFAULT 'motpasse',
 	gold			INT					NOT NULL DEFAULT 0,
 	xpTotal			INT					NOT NULL DEFAULT 0,
-	dateEmbaudhe	DATE				NOT NULL,
+	dateEmbaudhe	datetime				NOT NULL,
 
 
 	PRIMARY KEY (noEmploye)
@@ -53,7 +53,7 @@ CREATE TABLE tbluserBadge
 (
 	idUser				int NOT NULL,
 	idBadge				int NOT NULL,
-	dateObtention		date NOT NULL,	
+	dateObtention		datetime NOT NULL,	
 )
 
 IF OBJECT_ID ('tblNiveau') IS NOT NULL
@@ -87,7 +87,7 @@ CREATE TABLE tblXPGagne
 (
 	idGainXP			int		NOT NULL UNIQUE IDENTITY (1,1),
 	idUser				int		NOT NULL ,
-	dateXPGagne			date	NOT NULL,
+	dateXPGagne			datetime	NOT NULL,
 	idCauseGainXP		int		NOT NULL,
 	qteXPGagne			INT		not null,
 	PRIMARY KEY  (idGainXP)
@@ -103,7 +103,7 @@ CREATE TABLE tblCheckIn
 	idCheckIn			int		NOT NULL UNIQUE IDENTITY (1,1),
 	idUser				int		NOT NULL ,
 	accepte				bit		NOT NULL,
-	dateCheckIn			date	NOT NULL,
+	dateCheckIn			datetime	NOT NULL,
 	PRIMARY KEY  (idCheckIn)
 )
 
@@ -119,7 +119,7 @@ CREATE TABLE tblDonAgreabilite
 	qteGoldEnvoye		int		NOT NULL,
 	idRaisonEnvoi		int		not null,
 	descriptionSupp		varchar(200) null,
-	dateEnvoi			date	not null,
+	dateEnvoi			datetime	not null,
 	PRIMARY KEY  (idDonAgreabilite)
 )
 
