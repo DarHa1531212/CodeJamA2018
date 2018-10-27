@@ -20,12 +20,14 @@ namespace CGICodeJamA2018CHSS
 
         static public uint GetMaxGoldDonParJour() { return maxGoldDonParJour; }
 
-        static public void PushAgreabilite(Agreabilite agreabilite) {
+        static public bool PushAgreabilite(Agreabilite agreabilite) {
             if (!listeActions.Contains(agreabilite))
             {
                 listeActions.Add(agreabilite);
                 listeActions.TrimExcess();
+                return true;
             }
+            return false;
         }
 
         static public void PopAgreabilite(Agreabilite agreabilite) {
@@ -39,7 +41,7 @@ namespace CGICodeJamA2018CHSS
         }
 
         static private void UpdateListeUtilisateurs() {
-            userList = GetUserList(); //va chercher la liste d'utilisateurs dans la base de données
+            userList = Database.GetUserList(); //va chercher la liste d'utilisateurs dans la base de données
         }
 
         static public void ReceiveReward(DemandeDeDon demande) {

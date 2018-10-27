@@ -16,20 +16,22 @@ namespace CGICodeJamA2018CHSS
         ~BatchDons() { }
 
         public void PushDemandeDeDon(DemandeDeDon demandeDeDon) {
-            if (AgreabiliteController.GetMaxGoldDonParJour() > valeurTotale + demandeDeDon.GetMontant()) {
+            if (AgreabiliteController.GetMaxGoldDonParJour() > valeurTotale + demandeDeDon.GetAgreabilite().GetGold()) {
                 batchDeDons.Add(demandeDeDon);
-                valeurTotale += demandeDeDon.GetMontant();
+                valeurTotale += demandeDeDon.GetAgreabilite().GetGold();
             }
         }
         private bool CanReceiveReward(DemandeDeDon demande)
         {
+            uint valeurDons = 0;
             List<DemandeDeDon> userData = new List<DemandeDeDon>();
             foreach (DemandeDeDon demandeDon in donneur.listeDons) {
                 if (demandeDon.GetDate() == DateTime.Now.Date && demandeDon.GetReceveur() == demande.GetReceveur()) {
                     userData.Add(demandeDon);
+                    valeurDons += demandeDon.GetAgreabilite().GetGold();
                 }
             }
-            if (donneur != demande.GetDonneur() || demande.GetDonneur() == demande.GetReceveur() ||  )
+            if (donneur != demande.GetDonneur() || demande.GetDonneur() == demande.GetReceveur() ||  valeurDons > AgreabiliteController.GetMaxGoldDonParJour())
             {
                 return false;
             }

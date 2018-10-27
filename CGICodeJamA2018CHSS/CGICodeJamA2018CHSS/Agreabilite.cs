@@ -10,7 +10,7 @@ namespace CGICodeJamA2018CHSS
         private string name;
         private uint goldValue;
 
-        Agreabilite(string nom, int xp, uint gold) {
+        Agreabilite(string nom, uint gold) {
             SetName(nom);
             SetGold(gold);
         }

@@ -9,13 +9,13 @@ namespace CGICodeJamA2018CHSS
     {
         private Utilisateur donneur;
         private Utilisateur receveur;
-        private uint montant;
+        private Agreabilite agreabilite;
         private DateTime date;
 
-        DemandeDeDon(Utilisateur giver, Utilisateur receiver, uint amount) {
+        DemandeDeDon(Utilisateur giver, Utilisateur receiver, Agreabilite agreability) {
             donneur = giver;
             receveur = receiver;
-            montant = amount;
+            agreabilite = agreability;
             date = DateTime.Now.Date;
         }
 
@@ -27,9 +27,7 @@ namespace CGICodeJamA2018CHSS
 
         public void SetReceveur(Utilisateur receiver) { receveur = receiver; }
 
-        public uint GetMontant() { return montant; }
-
-        public void SetMontant(uint amount) { montant = amount; }
+        public Agreabilite GetAgreabilite() { return agreabilite; }
 
         public DateTime GetDate() { return date; }
     }
