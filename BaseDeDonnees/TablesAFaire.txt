@@ -1,0 +1,35 @@
+user
+noEmploye
+nomPrenom
+MotPasse
+xpTotal
+dateEmbauche
+gold
+
+tblBadge
+idbadge
+nombadge
+description badge
+
+tbluserBadge
+idUser
+idBadge
+dateObtention
+
+tblNiveau
+idNiveau
+xpMinNiveau
+
+
+tblXPGagne
+idGainXP
+idUser
+QteXPGagne (int)
+dateXPGagne
+idCauseGainXP
+
+tblGainXP
+idGain
+causeGain
+
+
