@@ -35,7 +35,7 @@
             this.NoEmploye = new System.Windows.Forms.ListBox();
             this.tblUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DonDeGold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+     //       ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUserBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,17 +75,17 @@
             // 
             // databaseDataSet
             // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+        //    this.databaseDataSet.DataSetName = "DatabaseDataSet";
+         //   this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblUserBindingSource
             // 
             this.tblUserBindingSource.DataMember = "tblUser";
-            this.tblUserBindingSource.DataSource = this.databaseDataSet;
+          //  this.tblUserBindingSource.DataSource = this.databaseDataSet;
             // 
             // tblUserTableAdapter
             // 
-            this.tblUserTableAdapter.ClearBeforeFill = true;
+       //     this.tblUserTableAdapter.ClearBeforeFill = true;
             // 
             // Dons
             // 
@@ -100,7 +100,7 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Dons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DonDeGold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+       //     ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUserBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

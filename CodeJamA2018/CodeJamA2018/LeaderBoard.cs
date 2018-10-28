@@ -11,24 +11,24 @@ namespace CGICodeJamA2018CHSS
         string[] tableauNom = new string[3];
         int ratio;
 
-        void main()
-        {
-            CreeTableauNom();
-            Board();
-            return;
-        }
+        //void main()
+        //{
+        //    CreeTableauNom();
+        //    Board();
+        //    return;
+        //}
 
 
-        string[] CreeTableauNom()
-        {
-            for (tblUser.)
-                tableauNom[0] = tblUser.prenomNom;
-            tableauNom[1] = tblUser.prenomNom;
-            tableauNom[2] = tblUser.prenomNom;
+        //string[] CreeTableauNom()
+        //{
+        //    for (tblUser.)
+        //        tableauNom[0] = tblUser.prenomNom;
+        //    tableauNom[1] = tblUser.prenomNom;
+        //    tableauNom[2] = tblUser.prenomNom;
 
-            return tableauNom;
+        //    return tableauNom;
 
-        }
+        //}
 
         void Board()
         {

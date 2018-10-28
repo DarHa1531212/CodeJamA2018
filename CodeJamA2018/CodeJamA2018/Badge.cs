@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeJamA2018;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -102,7 +103,7 @@ namespace CGICodeJamA2018CHSS
 
         public void BadgeAnciennete()
         {  
-            anciennete = (dateTime - utilisateur.dateEmbaudhe);
+            //anciennete = (dateTime - utilisateur.dateEmbaudhe);
 
             if (anciennete >= 40)
             {

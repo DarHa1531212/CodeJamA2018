@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeJamA2018;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,40 +22,40 @@ namespace CGICodeJamA2018CHSS
 
         Utilisateur userRatio;
 
-        //création de la listeCheckIn
-        tblCheckIn CreationListeCheckIn()
-        {
+        ////création de la listeCheckIn
+        //tblCheckIn CreationListeCheckIn()
+        //{
 
-            return listeCheckIn;
-        }
+        //    //return listeCheckIn;
+        //}
         int CalculRatio()
         {
             int pushaccepte = 0;
             int pushrefuse = 0;
 
 
-            while (tblCheckIn != 0)
-            {
-                for (idUser
-                if (accepte = true)
-                        pushaccepte++;
-                if (accepte = false)
-                    pushrefuse++;
-            }
-            tblCheckIn a = new tblCheckIn();
+            //while (tblCheckIn != 0)
+            //{
+            //    for (idUser
+            //    if (accepte = true)
+            //            pushaccepte++;
+            //    if (accepte = false)
+            //        pushrefuse++;
+            //}
+            //tblCheckIn a = new tblCheckIn();
 
             ratio = pushaccepte / pushrefuse;
 
             userRatio = new Utilisateur();
 
-            userRatio.idUser = a.idUser;
+            //userRatio.idUser = a.idUser;
             userRatio.ratio = ratio;
 
-            listeRatio
-                foreach (var x in listeRatio)
-            {
-                x.
-            }
+            //listeRatio
+            //    foreach (var x in listeRatio)
+            //{
+            //    x.
+            //}
             return ratio;
         }
     }
