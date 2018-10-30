@@ -5,8 +5,6 @@ C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Deb
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.csproj.CoreCompileInputs.cache
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\App_Data\Database.mdf
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\App_Data\Database_log.ldf
-C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\Database.mdf
-C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\Database_log.ldf
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\CodeJamA2018.exe.config
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\CodeJamA2018.exe
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\bin\Debug\CodeJamA2018.pdb
