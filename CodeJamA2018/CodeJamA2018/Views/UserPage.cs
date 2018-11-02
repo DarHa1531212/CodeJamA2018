@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CodeJamA2018.Model;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +21,35 @@ namespace CodeJamA2018
 
         private void UserPage_Load(object sender, EventArgs e)
         {
+            List<CausesGainsXp> causesGainXPs = new List<CausesGainsXp>();
+            int nbreGainsXP;
+
             loginInfo user = new loginInfo();
             label1.Text = user.LogedInUser.prenomNom;
-            lblXp.Text = "vous avez " + user.LogedInUser.xpTotal +" XP";
+            lblXp.Text = "vous avez " + user.LogedInUser.xpTotal + " XP";
+
+            ControllerAccess accesData = new ControllerAccess();
+            causesGainXPs = accesData.getUsersXpGains(user.LogedInUser.idemploye);
+            nbreGainsXP = causesGainXPs.Count();
+
+            Label[] labels = new Label[nbreGainsXP];
+            for (int i = 0; i < nbreGainsXP; i++)
+            {
+                labels[i] = new Label();
+                labels[i].Text = causesGainXPs[i].qteXpGagne + "Xp Gagné avec cause: " + causesGainXPs[i].causeGainXp;
+                labels[i].Width = TextRenderer.MeasureText(labels[i].Text, labels[i].Font).Width;
+            }
+
+            // This adds the controls to the form (you will need to specify thier co-ordinates etc. first)
+            for (int i = 0; i < nbreGainsXP; i++)
+            {
+                groupBox2.Controls.Add(labels[i]);
+                labels[i].Location = new Point(6, 23 * i + 17);
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }

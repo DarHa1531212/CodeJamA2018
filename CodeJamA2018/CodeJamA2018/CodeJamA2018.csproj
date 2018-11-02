@@ -75,8 +75,19 @@
     <Compile Include="Badge\Badge.cs" />
     <Compile Include="Badge\BatchDons.cs" />
     <Compile Include="Badge\ClaculCheckIn.cs" />
-    <Compile Include="DataModel\ControllerAccess.cs" />
     <Compile Include="Agreabilite\DemandeDeDon.cs" />
+    <Compile Include="DataModel\ControllerAccess.cs" />
+    <Compile Include="DataModel\Model1.cs" />
+    <Compile Include="DataModel\tblBadge.cs" />
+    <Compile Include="DataModel\tblCheckIn.cs" />
+    <Compile Include="DataModel\tblDonAgreabilite.cs" />
+    <Compile Include="DataModel\tblGainXP.cs" />
+    <Compile Include="DataModel\tblNiveau.cs" />
+    <Compile Include="DataModel\tblraisonAgreabilite.cs" />
+    <Compile Include="DataModel\tblUser.cs" />
+    <Compile Include="DataModel\tbluserBadge.cs" />
+    <Compile Include="Model\CausesGainsXp.cs" />
+    <Compile Include="tblXPGagne.cs" />
     <Compile Include="Views\Dons.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,19 +101,9 @@
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Badge\LeaderBoard.cs" />
-    <Compile Include="DataModel\DataModel.cs" />
     <Compile Include="GlobalController\loginInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataModel\tblBadge.cs" />
-    <Compile Include="DataModel\tblCheckIn.cs" />
-    <Compile Include="DataModel\tblDonAgreabilite.cs" />
-    <Compile Include="DataModel\tblGainXP.cs" />
-    <Compile Include="DataModel\tblNiveau.cs" />
-    <Compile Include="DataModel\tblraisonAgreabilite.cs" />
-    <Compile Include="DataModel\tblUser.cs" />
-    <Compile Include="DataModel\tbluserBadge.cs" />
-    <Compile Include="DataModel\tblXPGagne.cs" />
     <Compile Include="Views\UserPage.cs">
       <SubType>Form</SubType>
     </Compile>

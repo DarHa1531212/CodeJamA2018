@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CodeJamA2018
 {
-    public partial class login : Form
+    public partial class frmLogin : Form
     {
-        public login()
+        public frmLogin()
         {
             InitializeComponent();
         }

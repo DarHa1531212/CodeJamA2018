@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CodeJamA2018.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,8 @@ namespace CodeJamA2018
 
         public tblUser getUsers(string username)
         {
-            DataModel model1 = new DataModel();
-  
+            Model1 model1 = new Model1();
+
 
             var query = from user in model1.tblUser
                         select user;
@@ -26,7 +27,35 @@ namespace CodeJamA2018
             }
 
             return null;
-            
+
+        }
+
+
+        public List<CausesGainsXp> getUsersXpGains(int user)
+        {
+            using (Model1 model1 = new Model1())
+            {
+                List<CausesGainsXp> listValeuresDeRetour = new List<CausesGainsXp>();
+
+                var query = (from xpGains in model1.tblXPGagne
+                             join causesGainXp in model1.tblGainXP
+                             on xpGains.idCauseGainXP equals causesGainXp.idCauseGain
+                             where xpGains.idUser == user
+                             select new
+                             {
+                                 qteXpGagne = xpGains.qteXPGagne,
+                                 causeGain = causesGainXp.nomCauseGain
+                             }).ToList();
+                foreach (var trouve in query)
+                {
+                    CausesGainsXp elementActuel = new CausesGainsXp();
+                    elementActuel.qteXpGagne = trouve.qteXpGagne;
+                    elementActuel.causeGainXp = trouve.causeGain;
+                    listValeuresDeRetour.Add(elementActuel);
+                }
+                return listValeuresDeRetour;
+
+            }
         }
     }
 }

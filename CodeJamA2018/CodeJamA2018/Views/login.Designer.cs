@@ -1,6 +1,6 @@
 ﻿namespace CodeJamA2018
 {
-    partial class login
+    partial class frmLogin
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -38,7 +38,7 @@
             // userLbl
             // 
             this.userLbl.AutoSize = true;
-            this.userLbl.Location = new System.Drawing.Point(42, 32);
+            this.userLbl.Location = new System.Drawing.Point(12, 9);
             this.userLbl.Name = "userLbl";
             this.userLbl.Size = new System.Drawing.Size(38, 13);
             this.userLbl.TabIndex = 0;
@@ -47,7 +47,7 @@
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(42, 61);
+            this.Password.Location = new System.Drawing.Point(12, 38);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(53, 13);
             this.Password.TabIndex = 1;
@@ -55,14 +55,14 @@
             // 
             // txtUserNbr
             // 
-            this.txtUserNbr.Location = new System.Drawing.Point(116, 34);
+            this.txtUserNbr.Location = new System.Drawing.Point(86, 11);
             this.txtUserNbr.Name = "txtUserNbr";
             this.txtUserNbr.Size = new System.Drawing.Size(100, 20);
             this.txtUserNbr.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(116, 61);
+            this.txtPassword.Location = new System.Drawing.Point(86, 38);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(73, 106);
+            this.btnLogin.Location = new System.Drawing.Point(15, 76);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -78,17 +78,22 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // login
+            // frmLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 220);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(233, 114);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserNbr);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.userLbl);
-            this.Name = "login";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

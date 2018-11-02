@@ -1,5 +1,4 @@
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.csprojAssemblyReference.cache
-C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.login.resources
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.Properties.Resources.resources
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.csproj.GenerateResource.cache
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.csproj.CoreCompileInputs.cache
@@ -17,3 +16,4 @@ C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Deb
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.exe
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.pdb
 C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.UserPage.resources
+C:\Users\HansIV4\Documents\GitHub\CodeJamA2018\CodeJamA2018\CodeJamA2018\obj\Debug\CodeJamA2018.frmLogin.resources
