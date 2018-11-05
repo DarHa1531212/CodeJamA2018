@@ -28,7 +28,6 @@ namespace CodeJamA2018
             }
             else if (user.motPasse == txtPassword.Text)
             {
-                MessageBox.Show("Bonjour, " + user.prenomNom);
                 loginInfo newLogin = new loginInfo();
                 newLogin.setLogin(user);
 

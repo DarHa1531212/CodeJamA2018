@@ -21,6 +21,8 @@ namespace CodeJamA2018
 
         private void UserPage_Load(object sender, EventArgs e)
         {
+            label1.BringToFront();
+
             List<CausesGainsXp> causesGainXPs = new List<CausesGainsXp>();
             int nbreGainsXP;
 
@@ -48,9 +50,9 @@ namespace CodeJamA2018
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void UserPage_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
