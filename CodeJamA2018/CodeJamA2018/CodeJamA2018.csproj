@@ -78,6 +78,7 @@
     <Compile Include="Agreabilite\DemandeDeDon.cs" />
     <Compile Include="DataModel\ControllerAccess.cs" />
     <Compile Include="DataModel\Model1.cs" />
+    <Compile Include="Model\CausesGainsXp.cs" />
     <Compile Include="DataModel\tblBadge.cs" />
     <Compile Include="DataModel\tblCheckIn.cs" />
     <Compile Include="DataModel\tblDonAgreabilite.cs" />
@@ -86,8 +87,7 @@
     <Compile Include="DataModel\tblraisonAgreabilite.cs" />
     <Compile Include="DataModel\tblUser.cs" />
     <Compile Include="DataModel\tbluserBadge.cs" />
-    <Compile Include="Model\CausesGainsXp.cs" />
-    <Compile Include="tblXPGagne.cs" />
+    <Compile Include="DataModel\tblXPGagne.cs" />
     <Compile Include="Views\Dons.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,7 +138,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database.mdf">
