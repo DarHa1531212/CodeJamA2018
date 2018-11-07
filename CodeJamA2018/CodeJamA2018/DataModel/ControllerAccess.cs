@@ -57,5 +57,23 @@ namespace CodeJamA2018
 
             }
         }
+
+        public List<tblNiveau> GetLevels()
+        {
+            using (Model1 model1 = new Model1())
+            {
+                List<tblNiveau> listValeuresDeRetour = new List<tblNiveau>();
+
+                var query = from niveaux in model1.tblNiveau
+                            select niveaux;
+                foreach (var trouve in query)
+                {
+                  //  tblNiveau elementActuel = new tblNiveau();
+                    listValeuresDeRetour.Add(trouve);
+                }
+                return listValeuresDeRetour;
+
+            }
+        }
     }
 }
