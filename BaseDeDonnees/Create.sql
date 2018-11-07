@@ -1,4 +1,5 @@
 USE master
+GO
 
 IF EXISTS(select * from sys.databases where name='CGICodeJamA2018')
 DROP DATABASE CGICodeJamA2018
@@ -158,3 +159,6 @@ add foreign key (idBadge) REFERENCES tblBadge (idBadge)
 
 alter table tblDonAgreabilite
 add foreign key (idRaisonEnvoi) REFERENCES tblraisonAgreabilite (idRaison)
+
+--ALTER DATABASE CGICodeJamA2018
+--SET SINGLE_USER WITH ROLLBACK IMMEDIATE;

@@ -14,6 +14,8 @@ namespace CodeJamA2018
 {
     public partial class UserPage : Form
     {
+        loginInfo user = new loginInfo();
+        ControllerAccess accesData = new ControllerAccess();
         public UserPage()
         {
             InitializeComponent();
@@ -21,16 +23,50 @@ namespace CodeJamA2018
 
         private void UserPage_Load(object sender, EventArgs e)
         {
-            label1.BringToFront();
+            SetXpGainsLabels();
+            SerUserNameXpLbls();
+            SetLblXp();
+            SetlblAnciennete();
+        }
 
+        private void SetlblAnciennete()
+        {
+            DateTime zeroTime = new DateTime(1, 1, 1);
+
+            DateTime embauche = new DateTime();
+            DateTime adj = new DateTime();
+
+            adj = DateTime.Now;
+            embauche = user.LogedInUser.dateEmbaudhe;
+
+            TimeSpan span = adj - embauche;
+            // Because we start at year 1 for the Gregorian
+            // calendar, we must subtract a year here.
+            int years = (zeroTime + span).Year - 1;
+
+            // 1, where my other algorithm resulted in 0.
+            lblAnciennete.Text = "Vous avez " + years + " ans d'ancienneté";
+            Console.WriteLine("Yrs elapsed: " + years);
+        }
+
+        private void SetLblXp()
+        {
+            int i = 0;
+            List<tblNiveau> lstNiveaux =  accesData.GetLevels();
+            while (lstNiveaux[i].xpMinNiveau < user.LogedInUser.xpTotal)
+            {
+                i++;
+            }
+            lblLevel.Text = "Vous êtes niveau " + i;
+
+
+        }
+
+        private void SetXpGainsLabels()
+        {
             List<CausesGainsXp> causesGainXPs = new List<CausesGainsXp>();
             int nbreGainsXP;
-
-            loginInfo user = new loginInfo();
-            label1.Text = user.LogedInUser.prenomNom;
-            lblXp.Text = "vous avez " + user.LogedInUser.xpTotal + " XP";
-
-            ControllerAccess accesData = new ControllerAccess();
+            
             causesGainXPs = accesData.getUsersXpGains(user.LogedInUser.idemploye);
             nbreGainsXP = causesGainXPs.Count();
 
@@ -48,6 +84,12 @@ namespace CodeJamA2018
                 groupBox2.Controls.Add(labels[i]);
                 labels[i].Location = new Point(6, 23 * i + 17);
             }
+        }
+
+        private void SerUserNameXpLbls()
+        {
+            lblNom.Text = user.LogedInUser.prenomNom;
+            lblXp.Text = "vous avez " + user.LogedInUser.xpTotal + " XP";
         }
 
         private void UserPage_FormClosed(object sender, FormClosedEventArgs e)

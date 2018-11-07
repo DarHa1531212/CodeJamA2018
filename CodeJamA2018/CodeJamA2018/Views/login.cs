@@ -19,9 +19,11 @@ namespace CodeJamA2018
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             ControllerAccess reader = new ControllerAccess();
             tblUser user = new tblUser();
             user = reader.getUsers(txtUserNbr.Text);
+            Cursor.Current = Cursors.Default;
             if (user == null)
             {
                 MessageBox.Show("Unknown User");

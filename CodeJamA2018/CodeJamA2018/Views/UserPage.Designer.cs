@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblXp = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -43,8 +43,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.grpHeader = new System.Windows.Forms.GroupBox();
             this.grpUserInfo = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.lblAnciennete = new System.Windows.Forms.Label();
+            this.panHeader = new System.Windows.Forms.Panel();
+            this.panHeaderBody = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -52,27 +56,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.grpHeader.SuspendLayout();
-            this.grpUserInfo.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.panHeader.SuspendLayout();
+            this.panHeaderBody.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNom
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblNom.AutoSize = true;
+            this.lblNom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNom.Location = new System.Drawing.Point(10, 10);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(39, 13);
+            this.lblNom.TabIndex = 1;
+            this.lblNom.Text = "lblNom";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Image = global::CodeJamA2018.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(117, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -81,11 +87,11 @@
             // 
             this.lblXp.AutoSize = true;
             this.lblXp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblXp.Location = new System.Drawing.Point(0, 26);
+            this.lblXp.Location = new System.Drawing.Point(10, 23);
             this.lblXp.Name = "lblXp";
-            this.lblXp.Size = new System.Drawing.Size(35, 13);
+            this.lblXp.Size = new System.Drawing.Size(30, 13);
             this.lblXp.TabIndex = 4;
-            this.lblXp.Text = "label2";
+            this.lblXp.Text = "lblXp";
             // 
             // groupBox1
             // 
@@ -100,7 +106,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 131);
+            this.groupBox1.Location = new System.Drawing.Point(0, 133);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(800, 120);
             this.groupBox1.TabIndex = 3;
@@ -206,31 +212,20 @@
             // 
             this.groupBox2.AutoSize = true;
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox2.Location = new System.Drawing.Point(13, 347);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.Location = new System.Drawing.Point(3, 16);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(50, 3, 3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(6, 19);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(50, 3, 3, 3);
+            this.groupBox2.Size = new System.Drawing.Size(53, 81);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // grpHeader
-            // 
-            this.grpHeader.Controls.Add(this.grpUserInfo);
-            this.grpHeader.Controls.Add(this.pictureBox1);
-            this.grpHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.grpHeader.Location = new System.Drawing.Point(0, 0);
-            this.grpHeader.Name = "grpHeader";
-            this.grpHeader.Size = new System.Drawing.Size(800, 131);
-            this.grpHeader.TabIndex = 5;
-            this.grpHeader.TabStop = false;
+            this.groupBox2.Text = "Gains Exp";
             // 
             // grpUserInfo
             // 
             this.grpUserInfo.BackColor = System.Drawing.SystemColors.Control;
-            this.grpUserInfo.Controls.Add(this.lblXp);
-            this.grpUserInfo.Controls.Add(this.label1);
-            this.grpUserInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpUserInfo.Location = new System.Drawing.Point(120, 16);
+            this.grpUserInfo.Location = new System.Drawing.Point(290, 16);
             this.grpUserInfo.Margin = new System.Windows.Forms.Padding(0);
             this.grpUserInfo.Name = "grpUserInfo";
             this.grpUserInfo.Padding = new System.Windows.Forms.Padding(0);
@@ -238,14 +233,70 @@
             this.grpUserInfo.TabIndex = 3;
             this.grpUserInfo.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.groupBox2);
+            this.groupBox3.Controls.Add(this.grpUserInfo);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point(0, 253);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(800, 100);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // lblLevel
+            // 
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLevel.Location = new System.Drawing.Point(10, 36);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(43, 13);
+            this.lblLevel.TabIndex = 5;
+            this.lblLevel.Text = "lblLevel";
+            // 
+            // lblAnciennete
+            // 
+            this.lblAnciennete.AutoSize = true;
+            this.lblAnciennete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblAnciennete.Location = new System.Drawing.Point(10, 49);
+            this.lblAnciennete.Name = "lblAnciennete";
+            this.lblAnciennete.Size = new System.Drawing.Size(71, 13);
+            this.lblAnciennete.TabIndex = 6;
+            this.lblAnciennete.Text = "lblAnciennete";
+            // 
+            // panHeader
+            // 
+            this.panHeader.Controls.Add(this.panHeaderBody);
+            this.panHeader.Controls.Add(this.pictureBox1);
+            this.panHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panHeader.Location = new System.Drawing.Point(0, 0);
+            this.panHeader.Name = "panHeader";
+            this.panHeader.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.panHeader.Size = new System.Drawing.Size(800, 133);
+            this.panHeader.TabIndex = 7;
+            // 
+            // panHeaderBody
+            // 
+            this.panHeaderBody.Controls.Add(this.lblAnciennete);
+            this.panHeaderBody.Controls.Add(this.lblLevel);
+            this.panHeaderBody.Controls.Add(this.lblXp);
+            this.panHeaderBody.Controls.Add(this.lblNom);
+            this.panHeaderBody.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panHeaderBody.Location = new System.Drawing.Point(122, 0);
+            this.panHeaderBody.Name = "panHeaderBody";
+            this.panHeaderBody.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
+            this.panHeaderBody.Size = new System.Drawing.Size(200, 133);
+            this.panHeaderBody.TabIndex = 4;
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.grpHeader);
+            this.Controls.Add(this.panHeader);
             this.Name = "UserPage";
             this.Text = "UserPage";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserPage_FormClosed);
@@ -258,18 +309,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.grpHeader.ResumeLayout(false);
-            this.grpUserInfo.ResumeLayout(false);
-            this.grpUserInfo.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.panHeader.ResumeLayout(false);
+            this.panHeaderBody.ResumeLayout(false);
+            this.panHeaderBody.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label lblXp;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
@@ -283,7 +335,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox grpHeader;
         private System.Windows.Forms.GroupBox grpUserInfo;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lblLevel;
+        private System.Windows.Forms.Label lblAnciennete;
+        private System.Windows.Forms.Panel panHeader;
+        private System.Windows.Forms.Panel panHeaderBody;
     }
 }
