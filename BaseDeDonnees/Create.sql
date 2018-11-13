@@ -9,7 +9,8 @@ CREATE DATABASE CGICodeJamA2018
 GO
 
 --ALTER DATABASE CGICodeJamA2018
---SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+--SET SINGLE_USER 
+--WITH ROLLBACK IMMEDIATE;
 
 USE CGICodeJamA2018
 GO
@@ -26,7 +27,8 @@ CREATE TABLE tblUser
 	motPasse		varchar (50)		NOT NULL DEFAULT 'motpasse',
 	gold			INT					NOT NULL DEFAULT 0,
 	xpTotal			INT					NOT NULL DEFAULT 0,
-	dateEmbaudhe	datetime				NOT NULL,
+	dateEmbaudhe	datetime			NOT NULL,
+	imageProfil		image				null,
 
 
 	PRIMARY KEY (noEmploye)
@@ -160,5 +162,5 @@ add foreign key (idBadge) REFERENCES tblBadge (idBadge)
 alter table tblDonAgreabilite
 add foreign key (idRaisonEnvoi) REFERENCES tblraisonAgreabilite (idRaison)
 
---ALTER DATABASE CGICodeJamA2018
---SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE CGICodeJamA2018
+SET SINGLE_USER WITH ROLLBACK IMMEDIATE;

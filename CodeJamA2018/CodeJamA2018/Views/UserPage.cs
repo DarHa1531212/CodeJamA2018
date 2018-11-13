@@ -81,7 +81,7 @@ namespace CodeJamA2018
             // This adds the controls to the form (you will need to specify thier co-ordinates etc. first)
             for (int i = 0; i < nbreGainsXP; i++)
             {
-                groupBox2.Controls.Add(labels[i]);
+                panGainsXP.Controls.Add(labels[i]);
                 labels[i].Location = new Point(6, 23 * i + 17);
             }
         }
